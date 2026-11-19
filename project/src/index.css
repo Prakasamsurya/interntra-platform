@@ -65,6 +65,18 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .hero-cover img {
+    image-rendering: auto;
+    object-position: center top;
+    filter: contrast(1.05) saturate(0.92);
+  }
+
+  @media (max-width: 640px) {
+    .hero-cover img {
+      object-position: 58% top;
+    }
+  }
 }
 
 /* Scroll-triggered reveal animations */

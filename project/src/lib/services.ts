@@ -32,8 +32,24 @@ export const SERVICES = [
     ],
   },
   {
-    id: 'portfolio-creation',
+    id: 'naukri-profile-optimisation',
     number: '03',
+    shortName: 'Naukri Profile Optimisation',
+    tagline: 'Make your Naukri profile easier for recruiters and search tools to find.',
+    description:
+      'We refine your Naukri profile so your headline, summary, skills, projects and preferences clearly communicate your strengths. You get practical guidance on keywords, profile completeness and the details that help your profile appear in relevant recruiter searches.',
+    benefits: [
+      'Profile headline and summary improvement',
+      'Relevant keywords for your target roles',
+      'Skills and project section optimisation',
+      'Profile completeness and visibility guidance',
+      'Recruiter-friendly role and location preferences',
+      'A final review before you start applying',
+    ],
+  },
+  {
+    id: 'portfolio-creation',
+    number: '04',
     shortName: 'Portfolio Creation',
     tagline: 'Your own space on the internet to show what you can build.',
     description:
@@ -49,7 +65,7 @@ export const SERVICES = [
   },
   {
     id: 'project-guidance',
-    number: '04',
+    number: '05',
     shortName: 'Project Guidance',
     tagline: 'Industry-relevant projects that give freshers something real to talk about.',
     description:
@@ -70,6 +86,7 @@ export type Service = (typeof SERVICES)[number];
 export const SERVICE_OPTIONS = [
   'Resume Creation',
   'LinkedIn Profile Optimisation',
+  'Naukri Profile Optimisation',
   'Portfolio Creation',
   'Industry-Relevant Project Guidance',
   'Something else',

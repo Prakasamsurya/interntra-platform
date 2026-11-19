@@ -55,7 +55,7 @@ export default function Testimonials() {
     <>
       <PageMeta
         title="Testimonials — InternTra"
-        description="Read genuine feedback from students who have worked with InternTra on resumes, LinkedIn profiles, portfolios and projects."
+        description="Read genuine feedback from students who have worked with InternTra on resumes, LinkedIn and Naukri profiles, portfolios and projects."
       />
 
       <section className="border-b border-ink-200 bg-white">
@@ -147,7 +147,7 @@ export default function Testimonials() {
 
       <CtaSection
         heading="Your story could be the first one here."
-        body="Work with us on your resume, LinkedIn profile, portfolio or projects — and judge the results yourself."
+        body="Work with us on your resume, LinkedIn or Naukri profile, portfolio or projects — and judge the results yourself."
       />
     </>
   );

@@ -60,6 +60,36 @@ function ServiceVisual({ index }: { index: number }) {
 
   if (index === 2) {
     return (
+      <div
+        className="rounded-2xl border border-ink-100 bg-white p-6 shadow-[0_20px_48px_-24px_rgba(24,24,23,0.3)] transition-transform duration-500 hover:rotate-0"
+        style={{ transform: 'rotateY(6deg) rotateX(3deg)' }}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="grid h-10 w-10 place-items-center rounded-lg bg-[#2f6f9f] text-sm font-bold text-white">N</div>
+            <div>
+              <div className="h-2.5 w-28 rounded-full bg-ink-300" />
+              <div className="mt-2 h-2 w-20 rounded-full bg-ink-100" />
+            </div>
+          </div>
+          <span className="rounded-full bg-forest-50 px-2.5 py-1 text-[10px] font-semibold text-forest-700">85% complete</span>
+        </div>
+        <div className="mt-5 rounded-xl bg-paper-100 p-4">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-400">Profile visibility</p>
+          <div className="mt-3 h-2 overflow-hidden rounded-full bg-ink-100"><div className="h-full w-4/5 rounded-full bg-forest-500" /></div>
+          <p className="mt-2 text-xs text-ink-500">Keywords · Skills · Preferences</p>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {['Headline', 'Skills', 'Projects'].map((tag) => (
+            <span key={tag} className="rounded-full border border-ink-100 bg-paper-50 px-3 py-1 text-xs font-medium text-ink-600">{tag}</span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (index === 3) {
+    return (
       <div className="relative" style={{ perspective: '1000px' }}>
         <div
           className="rounded-2xl border border-ink-100 bg-white p-6 shadow-[0_20px_48px_-24px_rgba(24,24,23,0.3)] transition-transform duration-500 hover:rotate-0"
@@ -130,7 +160,7 @@ export default function Services() {
     <>
       <PageMeta
         title="Services — InternTra"
-        description="Resume creation, LinkedIn profile optimisation, personal portfolio creation and industry-relevant project guidance — built for students and freshers."
+        description="Resume creation, LinkedIn and Naukri profile optimisation, personal portfolio creation and industry-relevant project guidance — built for students and freshers."
       />
 
       <section className="border-b border-ink-200 bg-white">
@@ -141,8 +171,8 @@ export default function Services() {
               Everything a fresher needs to be taken seriously.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-500 sm:text-lg">
-              Four focused services that together build a complete professional identity. Start
-              with one, or work through all four.
+              Five focused services that together build a complete professional identity. Start
+              with one, or work through all five.
             </p>
           </Reveal>
 

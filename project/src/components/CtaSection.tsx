@@ -9,7 +9,7 @@ type CtaSectionProps = {
 
 export default function CtaSection({
   heading = 'Ready to build your professional identity?',
-  body = 'Tell us where you are in your journey and we will help you take the next practical step — resume, LinkedIn, portfolio or projects.',
+  body = 'Tell us where you are in your journey and we will help you take the next practical step — resume, LinkedIn, Naukri, portfolio or projects.',
 }: CtaSectionProps) {
   return (
     <section className="py-20 lg:py-28">

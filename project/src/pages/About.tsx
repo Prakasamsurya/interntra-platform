@@ -90,7 +90,7 @@ export default function About() {
                 The gap was never talent. It was translation — turning effort into a professional
                 identity that recruiters, hiring managers and networks can understand in seconds.
                 InternTra was built to close that gap for students and freshers, one service at a
-                time: resumes, LinkedIn profiles, personal portfolios and industry-relevant projects.
+                time: resumes, LinkedIn and Naukri profiles, personal portfolios and industry-relevant projects.
               </p>
               <p>
                 Today we work with college students, final-year students and recent graduates who

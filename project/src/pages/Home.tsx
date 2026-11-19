@@ -19,7 +19,7 @@ const HOW_IT_WORKS = [
   {
     step: '03',
     title: 'Work with us',
-    body: 'We build and refine your resume, LinkedIn profile, portfolio or project together, step by step.',
+    body: 'We build and refine your resume, LinkedIn profile, Naukri profile, portfolio or project together, step by step.',
   },
   {
     step: '04',
@@ -50,14 +50,14 @@ const WHY_POINTS = [
 const BENEFITS = [
   'Stand out in a crowded fresher job market',
   'Present your skills the way employers read them',
-  'Get noticed by recruiters on LinkedIn',
+  'Get noticed by recruiters on LinkedIn and Naukri',
   'Show real proof of ability through a portfolio',
   'Talk about your projects with confidence in interviews',
   'Build habits that carry through your whole career',
 ];
 
 const STATS = [
-  { value: '4', label: 'Focused services' },
+  { value: '5', label: 'Focused services' },
   { value: '1:1', label: 'Guided, personal help' },
   { value: '100%', label: 'Student-first approach' },
 ];
@@ -67,7 +67,8 @@ function ServiceIcon({ index }: { index: number }) {
     <path key="a" d="M7 4h8l4 4v12H7V4Zm8 0v4h4M10 13h6M10 17h4" />,
     <path key="b" d="M7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-4 10c0-3 2-5 4-5s4 2 4 5M15 9l2 2 4-4M17 20h4" />,
     <path key="c" d="M5 4h14v16H5V4Zm3 4h8M8 12h8M8 16h5" />,
-    <path key="d" d="M9 6 4 12l5 6m6-12 5 6-5 6" />,
+    <path key="d" d="M4 7h16v13H4V7Zm3-3h10v3H7V4Zm1 8h8M8 16h5" />,
+    <path key="e" d="m9 6-5 6 5 6m6-12 5 6-5 6M13 4l-2 16" />,
   ];
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" aria-hidden="true">
@@ -81,7 +82,7 @@ export default function Home() {
     <>
       <PageMeta
         title="InternTra — Build Your Professional Identity. Start Your Career Journey."
-        description="InternTra helps college students and freshers build their professional identity through resumes, LinkedIn optimisation, personal portfolios and industry-relevant project guidance."
+        description="InternTra helps college students and freshers build their professional identity through resumes, LinkedIn and Naukri profile optimisation, personal portfolios and industry-relevant project guidance."
       />
 
       {/* Hero */}
@@ -97,6 +98,16 @@ export default function Home() {
             WebkitMaskImage: 'radial-gradient(ellipse 90% 70% at 50% 0%, black 40%, transparent 100%)',
           }}
         />
+        <div aria-hidden="true" className="hero-cover absolute inset-x-0 top-0 h-[23rem] overflow-hidden sm:h-[28rem] lg:h-[34rem]">
+          <img
+            src="/images/interntra_platform_cover.jpg"
+            alt=""
+            className="h-full w-full object-cover object-center opacity-[0.14] mix-blend-multiply"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-paper-100/25 via-paper-100/75 to-paper-100" />
+        </div>
         <div className="container-site relative pb-20 pt-16 lg:pb-28 lg:pt-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
@@ -111,7 +122,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={160}>
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-500 sm:text-lg">
-                  From resumes and LinkedIn profiles to personal portfolios and industry-relevant
+                  From resumes to LinkedIn and Naukri profiles, personal portfolios and industry-relevant
                   projects, InternTra helps students take practical steps towards their careers.
                 </p>
               </Reveal>
@@ -167,7 +178,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-6 space-y-3">
-                    {['Resume', 'LinkedIn', 'Portfolio', 'Projects'].map((item, i) => (
+                    {['Resume', 'LinkedIn', 'Naukri', 'Portfolio', 'Projects'].map((item, i) => (
                       <div
                         key={item}
                         className="flex items-center justify-between rounded-xl border border-ink-100 bg-paper-50 px-4 py-3 transition-transform duration-300 hover:translate-x-1"
@@ -208,7 +219,7 @@ export default function Home() {
         <div className="flex w-max animate-marquee gap-12 pr-12">
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center gap-12" aria-hidden={copy === 1}>
-              {['Resume Creation', 'LinkedIn Optimisation', 'Portfolio Creation', 'Project Guidance', 'Built for Freshers'].map(
+              {['Resume Creation', 'LinkedIn Optimisation', 'Naukri Optimisation', 'Portfolio Creation', 'Project Guidance', 'Built for Freshers'].map(
                 (item) => (
                   <span key={item} className="flex items-center gap-3 whitespace-nowrap font-display text-sm font-semibold uppercase tracking-[0.14em] text-ink-500">
                     <span className="h-1.5 w-1.5 rounded-full bg-forest-500" />
@@ -238,8 +249,8 @@ export default function Home() {
                 to it.
               </p>
               <p>
-                We close that gap. Through four focused services — resume creation, LinkedIn
-                optimisation, portfolio building and industry-relevant project guidance — we help
+                We close that gap. Through five focused services — resume creation, LinkedIn and
+                Naukri profile optimisation, portfolio building and industry-relevant project guidance — we help
                 college students and freshers turn what they already know into a professional
                 identity that gets taken seriously.
               </p>
@@ -258,7 +269,7 @@ export default function Home() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow justify-center">What we do</p>
             <h2 className="mt-5 text-balance font-display text-3xl font-bold leading-tight text-ink-950 sm:text-4xl">
-              Four services. One goal: employability.
+              Five services. One goal: employability.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-500">
               Each service stands on its own, but together they form a complete professional identity.
@@ -357,13 +368,13 @@ export default function Home() {
                 What changes after InternTra.
               </h2>
               <p className="mt-5 max-w-md text-base leading-relaxed text-ink-500">
-                The difference is not cosmetic. When your resume, profile, portfolio and projects
+                The difference is not cosmetic. When your resume, profiles, portfolio and projects
                 all tell the same strong story, opportunities start to open.
               </p>
               {/* 3D stack visual */}
               <div className="relative mt-10 hidden max-w-sm sm:block" style={{ perspective: '1000px' }}>
                 <div className="space-y-3" style={{ transform: 'rotateY(-10deg) rotateX(6deg)', transformStyle: 'preserve-3d' }}>
-                  {['Resume', 'LinkedIn', 'Portfolio', 'Projects'].map((item, i) => (
+                  {['Resume', 'LinkedIn', 'Naukri', 'Portfolio', 'Projects'].map((item, i) => (
                     <div
                       key={item}
                       className="flex items-center justify-between rounded-xl border border-ink-100 bg-white px-5 py-3.5 shadow-[0_8px_24px_-12px_rgba(24,24,23,0.25)] transition-transform duration-300 hover:translate-x-2"
